@@ -32,3 +32,8 @@ button[hidden] { display:none; }
 
 textarea { width:100%; min-height:150px; resize:vertical; font:inherit; color:var(--texto); background:transparent; border:1px solid var(--linea); border-radius:8px; padding:12px; }
 textarea:focus { border-color:var(--acento); outline:none; }
+.celda { display: flex; align-items: center; gap: 10px; }
+.mov { margin: 0; padding: 3px 10px; font-size: .75rem; white-space: nowrap; }
+.mov.perd { border-color: #ef5350; color: #ef5350; }
+.mov.perd:hover { background: #ef5350; color: #000; }
+tr.perd input[data-c="ing"] { color: #ef5350; }
