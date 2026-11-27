@@ -37,3 +37,27 @@ textarea:focus { border-color:var(--acento); outline:none; }
 .mov.perd { border-color: #ef5350; color: #ef5350; }
 .mov.perd:hover { background: #ef5350; color: #000; }
 tr.perd input[data-c="ing"] { color: #ef5350; }
+
+
+/* Caja para descontar dinero del 20% */
+
+#descontar {
+  width: 100%;
+  min-width: 90px;
+  margin-top: 8px;
+  padding: 7px 5px;
+  border: 1px solid var(--linea);
+  border-radius: 6px;
+  color: var(--texto);
+  background: #111;
+  font-size: .85rem;
+}
+
+#descontar:focus {
+  border-color: var(--acento);
+  outline: none;
+}
+
+#descontar::placeholder {
+  color: #777;
+}

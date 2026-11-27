@@ -1,23 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mi presupuesto</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
   <header>
     <h1>Mi presupuesto</h1>
     <p class="sub">Regla 50 / 30 / 20</p>
   </header>
 
   <main>
+
     <section>
       <div class="scroll">
         <table>
+
           <thead>
             <tr>
               <th>#</th>
@@ -28,7 +35,9 @@
               <th>20% del ingreso</th>
             </tr>
           </thead>
+
           <tbody id="cuerpo"></tbody>
+
           <tfoot>
             <tr>
               <td></td>
@@ -36,21 +45,43 @@
               <td>Total</td>
               <td id="t1"></td>
               <td id="t2"></td>
-              <td id="t3"></td>
+              <td>
+                <div id="t3"></div>
+
+                <input
+                  type="number"
+                  id="descontar"
+                  min="0"
+                  step="any"
+                  placeholder="Descontar €"
+                >
+              </td>
             </tr>
           </tfoot>
+
         </table>
       </div>
+
       <p id="resumen" class="sub"></p>
-      <button id="mas" type="button">+ Añadir 10 filas</button>
+
+      <button id="mas" type="button">
+        + Añadir 10 filas
+      </button>
+
     </section>
 
     <section>
       <h2>Notas</h2>
-      <textarea id="notas" placeholder="Escribe lo que quieras. Se guarda solo."></textarea>
+
+      <textarea
+        id="notas"
+        placeholder="Escribe lo que quieras. Se guarda solo."
+      ></textarea>
     </section>
+
   </main>
 
   <script src="script.js"></script>
+
 </body>
 </html>
